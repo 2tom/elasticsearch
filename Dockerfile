@@ -10,7 +10,7 @@ ENV JAVA_HOME /usr/lib/jvm/jre-1.7.0-openjdk.x86_64
 
 # elasticsearch install
 cd /opt &&\
-wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.3.1.tar.gz && \
+RUN wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.3.1.tar.gz && \
 tar xvzf elasticsearch-1.3.1.tar.gz &&\
 rm -f elasticsearch-1.3.1.tar.gz &&\
 mv elasticsearch-1.3.1 elasticsearch &&\
