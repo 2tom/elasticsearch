@@ -1,3 +1,3 @@
 #!/bin/sh
 
-docker run -d -p 9200:9200 -e "NODE_NAME=es131_01" -e "CLUSTER_NAME=es131" --name es131_01 trial/es131
+docker run -d -p 192.168.88.11:9201:9200 -p 192.168.88.11:9301:9300 --name es01 trial/es131 --cluster.name es131 --node.name es01
